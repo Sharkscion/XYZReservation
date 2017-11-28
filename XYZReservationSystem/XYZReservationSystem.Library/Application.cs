@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XYZReservationSystem.Library
 {
-    enum ApplicationPage
+    enum ApplicationScreen
     {
         FlightMaintenance,
         Reservation
@@ -18,20 +18,18 @@ namespace XYZReservationSystem.Library
 
         public const string mInputErrorMessage = "Please enter a valid menu option";
 
-        public Page GetPage(string input)
+        public Screen GetPage(string input)
         {
             if (!IsOptionValid(input))
                 return null;
-            else
-                
-            if (!Enum.IsDefined(typeof(ApplicationPage), input))
-                throw new ArgumentOutOfRangeException();
 
-
+            // TODO: CreateScreenFactory because get page 
+            // method only gets the page not generate the 
+            // chosen page
             switch (mChosenOption)
             {
-                case (int)ApplicationPage.FlightMaintenance: break;
-                case (int)ApplicationPage.Reservation: break;
+                case (int)ApplicationScreen.FlightMaintenance: break;
+                case (int)ApplicationScreen.Reservation: break;
             }   
 
             return null;
@@ -47,7 +45,7 @@ namespace XYZReservationSystem.Library
                 return false;
             }
 
-            if (!Enum.IsDefined(typeof(ApplicationPage), mChosenOption))
+            if (!Enum.IsDefined(typeof(ApplicationScreen), mChosenOption))
             {
                 return false;
             }

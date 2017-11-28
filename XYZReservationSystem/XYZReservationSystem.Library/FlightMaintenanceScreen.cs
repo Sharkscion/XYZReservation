@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace XYZReservationSystem.Library
 {
-    class ReservationPage
+    public class FlightMaintenanceScreen : Screen
     {
+        
     }
 }
