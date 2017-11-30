@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD:Source/ReservationCaseStudy/ReservationCaseStudy.Library/ReservationCaseStudy.Library.csproj
     <Compile Include="Presenters\FlightController.cs" />
     <Compile Include="Migrations\201711300715198_InitDatabase.cs" />
     <Compile Include="Migrations\201711300715198_InitDatabase.Designer.cs">
@@ -63,6 +64,10 @@
     <Compile Include="Models\Data\Reservation.cs" />
     <Compile Include="Models\Data\Station.cs" />
     <Compile Include="Models\DB\ReservationDBContext.cs" />
+=======
+    <Compile Include="FlightMaintenanceScreenTests.cs" />
+    <Compile Include="HomeScreenTests.cs" />
+>>>>>>> bac9d4cbe9af3fe128a7aab5b5e69f6299d1c271:XYZReservationSystem/XYZReservationSystem.Library.Tests/XYZReservationSystem.Library.Tests.csproj
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
