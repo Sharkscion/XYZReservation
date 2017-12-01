@@ -8,14 +8,14 @@ namespace ReservationCaseStudy
 {
     public class HomeScreen : BaseScreen
     {
-        public HomeScreen()
+        public HomeScreen(string screenTitle)
         {
-            ScreenTitle = "Welcome to the Home Screen!";
-            Options = new List<IMenuCommand>()
+            ScreenTitle = screenTitle;
+            Options = new List<IOption>()
             {
-                new GoToScreenCommand{Label = "Flight Maintenance", Screen = ApplicationScreen.FlightMaintenance},
-                new GoToScreenCommand{Label = "Reservation", Screen = ApplicationScreen.Reservation},
-                new ExitCommand()
+                new GoToScreenOption{Label = "Flight Maintenance", Screen = ApplicationScreen.FlightMaintenance},
+                new GoToScreenOption{Label = "Reservation", Screen = ApplicationScreen.Reservation},
+                new ExitOption()
             };
         }
 

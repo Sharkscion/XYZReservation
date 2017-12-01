@@ -6,31 +6,13 @@ using System.Threading.Tasks;
 
 namespace ReservationCaseStudy
 {
-    public interface IMenuCommand
+    public interface IOption
     {
-<<<<<<< HEAD:Source/ReservationCaseStudy/ReservationCaseStudy/Views/Commands/IMenuCommand.cs
         string Label { get; set; }
         void Execute();
-=======
+    }
 
-        public void Add()
-        {
-            
-        }
-
-
-        public string GetAirlineCode()
-        {
-            Console.WriteLine("Airline Code:");
-            var input = Console.ReadLine();
-            input.Trim();
-            
-
-            return "";
-        }
-
-
-
+}
 
 
 

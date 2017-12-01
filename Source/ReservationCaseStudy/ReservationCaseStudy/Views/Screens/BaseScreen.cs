@@ -14,11 +14,12 @@ namespace ReservationCaseStudy
 
         #endregion
 
-        #region Protected Fields
+        #region Protected Fields        
+        protected List<IOption> Options;
+        #endregion
 
-        protected string ScreenTitle;
-        protected List<IMenuCommand> Options;    
-        
+        #region Public Fields
+        public string ScreenTitle { get; set; }
         #endregion
 
         #region Private Methods
@@ -46,7 +47,7 @@ namespace ReservationCaseStudy
         #endregion
 
         #region Public Methods
-        public void Display(string value)
+        public void Display(object value)
         {
             Console.WriteLine(value);
 

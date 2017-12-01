@@ -45,18 +45,17 @@
     <Compile Include="Helpers\InputValidator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Flight Maintenance\AddFlightScreen.cs" />
     <Compile Include="Views\Application.cs" />
     <Compile Include="Views\ApplicationScreen.cs" />
-    <Compile Include="Views\BaseScreen.cs" />
-    <Compile Include="Views\Commands\ExitCommand.cs" />
-    <Compile Include="Views\Flight Maintenance\FlightMaintenanceScreen.cs" />
-    <Compile Include="Views\Commands\GoToScreenCommand.cs" />
-    <Compile Include="Views\HomeScreen.cs" />
-    <Compile Include="Views\Commands\IMenuCommand.cs" />
-    <Compile Include="Views\ReservationScreen.cs" />
-    <Compile Include="Views\ScreenFactory.cs" />
-    <Compile Include="Views\Flight Maintenance\SearchFlightScreen.cs" />
+    <Compile Include="Views\Options\OperationOption.cs" />
+    <Compile Include="Views\Screens\BaseScreen.cs" />
+    <Compile Include="Views\Options\ExitOption.cs" />
+    <Compile Include="Views\Screens\FlightMaintenanceScreen.cs" />
+    <Compile Include="Views\Options\GoToScreenOption.cs" />
+    <Compile Include="Views\Screens\HomeScreen.cs" />
+    <Compile Include="Views\Options\IOption.cs" />
+    <Compile Include="Views\Screens\ReservationScreen.cs" />
+    <Compile Include="Views\Screens\ScreenFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

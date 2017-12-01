@@ -11,10 +11,5 @@ namespace ReservationCaseStudy
         Home,
         FlightMaintenance,
         Reservation,
-        AddFlight,
-        SearchFlight,
-        AddReservation,
-        SearchReservation,
-        ViewReservation
     }
 }

@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace ReservationCaseStudy
 {
-    public class GoToScreenCommand : IMenuCommand
+    public class ExitOption : IOption
     {
-        public string Label { get; set; }
-
-        public ApplicationScreen Screen { get; set; }
+        public string Label { get; set; } = "Quit";
 
         public void Execute()
         {
-            ScreenFactory.GenerateScreen(Screen).Open();
+            Environment.Exit(0);
         }
     }
 }
