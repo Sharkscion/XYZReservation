@@ -1,11 +1,11 @@
-﻿using ReservationCaseStudy.Library.Views;
+﻿using ReservationCaseStudy.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReservationCaseStudy.Library.Views
+namespace ReservationCaseStudy.Views
 {
     public abstract class BaseScreen : IView
     {
@@ -16,7 +16,7 @@ namespace ReservationCaseStudy.Library.Views
         #endregion
 
         #region Protected Fields        
-        protected List<IOption> Options;
+        protected List<IOption> MainOptions;
         #endregion
 
         #region Public Fields
@@ -24,22 +24,17 @@ namespace ReservationCaseStudy.Library.Views
         #endregion
 
         #region Private Methods
-        private void ExecuteCommand()
+   
+        public int AskUserForOption(List<IOption> options)
         {
-            Clear();
-            Options.ElementAt(_ChosenOption).Execute();
-        }
-
-        private int AskUserForMenuOption()
-        {
-            Console.Write("Chosen Option: ");
+            Console.Write("Enter Option: ");
             var input = Console.ReadLine();
             int result = -1;
 
-            while (!int.TryParse(input, out result) || result > Options.Count() || result < 1)
+            while (!int.TryParse(input, out result) || result > options.Count() || result < 1)
             {
-                Console.WriteLine("Invalid option. Please choose only between 1 to " + Options.Count());
-                Console.Write("Chosen Option: ");
+                Console.WriteLine("Invalid option. Please choose only between 1 to " + options.Count());
+                Console.Write("Enter Option: ");
                 input = Console.ReadLine();
             }
 
@@ -49,17 +44,19 @@ namespace ReservationCaseStudy.Library.Views
 
         #region Public Methods
         
-        public void DisplayOptions()
+        public void DisplayMainOptions()
         {
-            if (Options != null)
+            if (MainOptions != null)
             {
-                for (int i = 1; i <= Options.Count; i++)
+                for (int i = 1; i <= MainOptions.Count; i++)
                 {
-                    Console.WriteLine("[{0}] {1}", i, Options.ElementAt(i - 1).Label);
+                    Console.WriteLine("[{0}] {1}", i, MainOptions.ElementAt(i - 1).Label);
                 }
 
-                _ChosenOption = AskUserForMenuOption() - 1;
-                ExecuteCommand();
+                _ChosenOption = AskUserForOption(MainOptions) - 1;
+
+                Clear();
+                MainOptions.ElementAt(_ChosenOption).Execute();
             }
         }
 

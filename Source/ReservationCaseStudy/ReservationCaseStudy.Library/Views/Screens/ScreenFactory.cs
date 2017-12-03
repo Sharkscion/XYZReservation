@@ -1,11 +1,12 @@
-﻿using ReservationCaseStudy.Library.Presenters;
+﻿using ReservationCaseStudy.Presenters;
+using ReservationCaseStudy.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReservationCaseStudy.Library.Views
+namespace ReservationCaseStudy.Views
 {
     public static class ScreenFactory
     {
@@ -14,13 +15,19 @@ namespace ReservationCaseStudy.Library.Views
             switch (screen)
             {
                 case ApplicationScreen.Home: return new HomeScreen();
+
                 case ApplicationScreen.FlightMaintenance:
 
-                    IManageFlightView flightMaintenanceScreen = new FlightMaintenanceScreen() { ScreenTitle = "Flight Maintenance" };
+                    IManageFlightView flightMaintenanceScreen = new FlightMaintenanceScreen();
                     FlightPresenter flightPresenter = new FlightPresenter(flightMaintenanceScreen);
                     return flightMaintenanceScreen;
 
-                case ApplicationScreen.Reservation: return new ReservationScreen();
+                case ApplicationScreen.Reservation:
+
+                    IManageReservationView reservationScreen = new ReservationScreen();
+                    ReservationPresenter reservationPresenter = new ReservationPresenter(reservationScreen);
+                    return reservationScreen;
+
                 default: return new HomeScreen(); 
             }
         }

@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ReservationCaseStudy.Library.Models
+namespace ReservationCaseStudy.Models
 {
     public class Passenger
     {
+        [NotMapped]
+        public const int MAX_NAME_LENGTH = 64;
         public int Id { get; set; }
 
         [Required]
-        [StringLength(64, ErrorMessage = "First name cannot be longer than 64 characters.")]
-        [RegularExpression(@"^[a-zA-Z''-'\s]*$", ErrorMessage ="First name should only consists of letters.")]
+        [StringLength(MAX_NAME_LENGTH)]
         public string FirstName { get; set; }
 
         [Required]
-        [StringLength(64, ErrorMessage = "Last name cannot be longer than 64 characters.")]
-        [RegularExpression(@"^[a-zA-Z''-'\s]*$", ErrorMessage = "A name should only consists of letters.")]
+        [StringLength(MAX_NAME_LENGTH)]
         public string LastName { get; set; }
 
         [DataType(DataType.Date)]

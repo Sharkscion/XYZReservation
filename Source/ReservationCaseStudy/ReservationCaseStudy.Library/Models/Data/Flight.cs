@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ReservationCaseStudy.Library.Models
+namespace ReservationCaseStudy.Models
 {
     public class Flight
     {
+        [NotMapped]
         public const int AIRLINE_CODE_LENGTH = 2;
+
+        [NotMapped]
         public const int MAX_FLIGHT_NUMBER = 9999;
 
         [Key, Column(Order = 0)]
@@ -18,18 +21,17 @@ namespace ReservationCaseStudy.Library.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Number { get; set; }
 
-        
         public string ArrivalStationCode { get; set; }
-
         
         public string DepartureStationCode { get; set; }
 
         [Required]
-         public TimeSpan ScheduledTimeArrival { get; set; }
+        [DisplayFormat(DataFormatString = @"{0:hh\:mm}")]
+        public TimeSpan ScheduledTimeArrival { get; set; }
 
         [Required]
+        [DisplayFormat(DataFormatString = @"{0:hh\:mm}")]
         public TimeSpan ScheduledTimeDeparture { get; set; }
-
 
         #region Navigation Properties
         

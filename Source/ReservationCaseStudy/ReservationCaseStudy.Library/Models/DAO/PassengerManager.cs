@@ -1,7 +1,7 @@
 ﻿
-using ReservationCaseStudy.Library.Models;
+using ReservationCaseStudy.Models;
 
-namespace ReservationCaseStudy.Library
+namespace ReservationCaseStudy.Models
 {
     public class PassengerManager : BaseDataManager<Passenger>
     {

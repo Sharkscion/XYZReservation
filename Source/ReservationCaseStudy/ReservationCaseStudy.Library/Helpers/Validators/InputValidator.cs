@@ -1,37 +1,48 @@
-﻿using ReservationCaseStudy.Library.Models;
+﻿using ReservationCaseStudy.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace ReservationCaseStudy.Library
+namespace ReservationCaseStudy.Helpers
 {
     public static class InputValidator
     {
         private static Regex _alphaNumericRegEx = new Regex("^[a-zA-Z0-9]*$");
-
-        public static bool IsValidTimeFormat(string input)
-        {
-            if(TimeSpan.TryParse(input, out var parsed))
-            {
-                return true;
-            }
-
-            return false;
-        }
-
+        private static Regex _nameRegEx = new Regex(@"^[a-zA-Z''-'\s]*$");
+       
         public static bool IsNumeric(string input)
         {
             if(int.TryParse(input, out int result))
             {
                 return true;
             }
-
             return false;
         }
 
+        public static bool IsDate(string input)
+        {
+            if(!DateTime.TryParseExact(input, "mm/dd/yyyy", new CultureInfo("en-US"), DateTimeStyles.None, out DateTime result))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+       
+
+        public static bool IsName(string input)
+        {
+            if (_nameRegEx.IsMatch(input))
+            {
+                return true;
+            }
+            return false;
+        }
 
         public static bool IsAlphaNumeric(string input)
         {

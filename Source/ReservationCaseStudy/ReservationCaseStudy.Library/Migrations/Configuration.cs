@@ -1,6 +1,6 @@
 namespace ReservationCaseStudy.Migrations
 {
-    using ReservationCaseStudy.Library.Models;
+    using ReservationCaseStudy.Models;
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;

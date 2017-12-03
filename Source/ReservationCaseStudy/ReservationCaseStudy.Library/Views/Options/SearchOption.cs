@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReservationCaseStudy.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,20 +7,16 @@ using System.Threading.Tasks;
 
 namespace ReservationCaseStudy.Views
 {
-    public class OperationOption : IOption
+    public class SearchOption : IOption
     {
-        private Action _Action;
-
         public string Label { get; set; }
 
-        public OperationOption(Action action)
-        {
-            _Action = action;
-        }
-        
+        public string Input { get; set; }
+
         public void Execute()
         {
-            _Action();
+            Console.Write("Enter {0}:", Label);
+            Input = Console.ReadLine();
         }
     }
 }

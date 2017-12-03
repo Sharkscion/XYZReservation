@@ -1,8 +1,7 @@
 ﻿
-using ReservationCaseStudy.Library.Models;
 using System.Linq;
 
-namespace ReservationCaseStudy.Library
+namespace ReservationCaseStudy.Models
 {
     public class FlightManager : BaseDataManager<Flight>
     {

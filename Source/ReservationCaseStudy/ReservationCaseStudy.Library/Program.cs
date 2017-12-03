@@ -1,5 +1,5 @@
 ﻿using ReservationCaseStudy.Library;
-using ReservationCaseStudy.Library.Views;
+using ReservationCaseStudy.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;

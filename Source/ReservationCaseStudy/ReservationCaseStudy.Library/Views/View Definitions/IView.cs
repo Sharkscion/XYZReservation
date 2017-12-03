@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReservationCaseStudy.Library.Views
+namespace ReservationCaseStudy.Views
 {
     public interface IView
     {

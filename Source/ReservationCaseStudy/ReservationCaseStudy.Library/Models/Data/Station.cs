@@ -2,10 +2,11 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ReservationCaseStudy.Library.Models
+namespace ReservationCaseStudy.Models
 {
     public class Station
     {
+        [NotMapped]
         public const int CODE_LENGTH = 3;
 
         [Key]

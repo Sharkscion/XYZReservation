@@ -1,5 +1,5 @@
 ﻿
-using ReservationCaseStudy.Library.Models;
+using ReservationCaseStudy.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
