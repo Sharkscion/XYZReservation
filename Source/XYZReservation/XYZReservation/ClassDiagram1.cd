@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="XYZReservation.Application" Collapsed="true">
+    <Position X="28.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.ReservationDBContext" Collapsed="true">
+    <Position X="26.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAQQAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Database\ReservationDBContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Program" Collapsed="true">
+    <Position X="32" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.DateParser" Collapsed="true">
+    <Position X="32" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\DateParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.EnumHelpers" Collapsed="true">
+    <Position X="33.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAgAAAAIAAAAA=</HashCode>
+      <FileName>Helpers\EnumHelpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.StringFormats" Collapsed="true">
+    <Position X="28.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAQAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\StringFormats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.AirlineCodeValidator" Collapsed="true">
+    <Position X="19.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Validators\AirlineCodeValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.BaseValidator" Collapsed="true">
+    <Position X="15.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Validators\BaseValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.BirthDateValidator" Collapsed="true">
+    <Position X="6.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Validators\BirthDateValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.FlightDateValidator" Collapsed="true">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Validators\FlightDateValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.FlightNumberValidator" Collapsed="true">
+    <Position X="13" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAwAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Validators\FlightNumberValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.FlightValidator" Collapsed="true">
+    <Position X="15.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Validators\FlightValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.InputValidator" Collapsed="true">
+    <Position X="26.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAIAAAAIAAAAAAAAAAAgAAAAAAAAIAAEAQAAg=</HashCode>
+      <FileName>Helpers\Validators\InputValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.NameValidator" Collapsed="true">
+    <Position X="17.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Validators\NameValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.NumPassengersValidator" Collapsed="true">
+    <Position X="22" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Validators\NumPassengersValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.StationValidator" Collapsed="true">
+    <Position X="24.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Validators\StationValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Helpers.TimeValidator" Collapsed="true">
+    <Position X="8.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Validators\TimeValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Migrations.InitDatabase" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201712040612328_InitDatabase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="XYZReservation.Migrations.Configuration" Collapsed="true">
+    <Position X="30.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Migrations\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Models.BaseDataManager&lt;T&gt;" Collapsed="true">
+    <Position X="9" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAABAAAAAAAAAAAAAAAgIAAAAAAAAwAAAAAAEAA=</HashCode>
+      <FileName>Models\DAO\BaseDataManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Models.FlightManager" Collapsed="true">
+    <Position X="5.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DAO\FlightManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Models.PassengerManager" Collapsed="true">
+    <Position X="8" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DAO\PassengerManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Models.ReservationManager" Collapsed="true">
+    <Position X="10.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DAO\ReservationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Models.StationManager" Collapsed="true">
+    <Position X="12.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DAO\StationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Models.Flight" Collapsed="true">
+    <Position X="28.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAEAAgAAEEAAAAAAAAAAAAAAAIAAEAAAAIg=</HashCode>
+      <FileName>Models\Entities\Flight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Models.Passenger" Collapsed="true">
+    <Position X="30.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAkAAAAAAAIAAEEAAAAAAAAAIAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\Entities\Passenger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Models.Reservation" Collapsed="true">
+    <Position X="33.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgQAAAAAQAgAAAEAACAAACAIAAAAAAAAgAA=</HashCode>
+      <FileName>Models\Entities\Reservation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Models.Station" Collapsed="true">
+    <Position X="26.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAiAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Entities\Station.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Presenters.FlightPresenter" Collapsed="true">
+    <Position X="30.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAACABAIAA=</HashCode>
+      <FileName>Presenters\FlightPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Presenters.ReservationPresenter" Collapsed="true">
+    <Position X="28.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAAAAAAAAAAAAAAAAACAAACAAIAAAAAAAAAAAAEAAM=</HashCode>
+      <FileName>Presenters\ReservationPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Views.ExitOption" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Options\ExitOption.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="XYZReservation.Views.GoToScreenOption" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Options\GoToScreenOption.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="XYZReservation.Views.OperationOption" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAQAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Options\OperationOption.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="XYZReservation.Views.SearchOption" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAQAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Options\SearchOption.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="XYZReservation.Views.AddPassengerView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAgMgAAASAIAAAAACAAAAAAAAIAgAAAAAAAAABAAg=</HashCode>
+      <FileName>Views\Screens\AddPassengerView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="XYZReservation.Views.BaseScreen" Collapsed="true">
+    <Position X="16" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAGAAAAAAAAAAAAACBBEAAA=</HashCode>
+      <FileName>Views\Screens\BaseScreen.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="XYZReservation.Views.FlightMaintenanceScreen" Collapsed="true">
+    <Position X="13.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACgIAAAAGQIEAkEACAAAACACAAAggEBIEAAAIBIIw=</HashCode>
+      <FileName>Views\Screens\FlightMaintenanceScreen.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="XYZReservation.Views.HomeScreen" Collapsed="true">
+    <Position X="16" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Screens\HomeScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Views.ReservationScreen" Collapsed="true">
+    <Position X="18.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAgIAAAgWAIAAkEACAAAECACAAgggoAAAAAAABMAA=</HashCode>
+      <FileName>Views\Screens\ReservationScreen.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="XYZReservation.Views.ScreenFactory" Collapsed="true">
+    <Position X="30.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Views\Screens\ScreenFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XYZReservation.Views.SearchArgs" Collapsed="true">
+    <Position X="32" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SearchArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="XYZReservation.Views.IOption" Collapsed="true">
+    <Position X="26.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Options\IOption.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="XYZReservation.Views.IManageFlightView" Collapsed="true">
+    <Position X="5.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEQAAAAEAAAAAAAACAAAAAAAIAAAAAAAIg=</HashCode>
+      <FileName>Views\ViewDefinitions\IManageFlightView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="XYZReservation.Views.IManagePassengerView" Collapsed="true">
+    <Position X="8" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAQAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Views\ViewDefinitions\IManagePassengerView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="XYZReservation.Views.IManageReservationView" Collapsed="true">
+    <Position X="10.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgUAAAAAEAAAAAEAACAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ViewDefinitions\IManageReservationView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="XYZReservation.Views.IManageView" Collapsed="true">
+    <Position X="8" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAACAAAAAAACAAAAAAAAAAgAAAAAAAAABAAA=</HashCode>
+      <FileName>Views\ViewDefinitions\IManageView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="XYZReservation.Views.IView" Collapsed="true">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ViewDefinitions\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="XYZReservation.Presenters.FlightSearchBy" Collapsed="true">
+    <Position X="28.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAACAAAAAAAIAAACAAAAA=</HashCode>
+      <FileName>Presenters\FlightPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="XYZReservation.Presenters.ReservationSearchBy" Collapsed="true">
+    <Position X="30.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Presenters\ReservationPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="XYZReservation.Views.ApplicationScreen" Collapsed="true">
+    <Position X="26.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Views\Screens\ApplicationScreen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

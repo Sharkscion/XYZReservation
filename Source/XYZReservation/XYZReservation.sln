@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XYZReservation", "XYZReservation\XYZReservation.csproj", "{8139B34A-EB92-4E66-916C-EDEE420501FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XYZReservation.Test", "XYZReservation.Test\XYZReservation.Test.csproj", "{C11C6E30-C93E-49D2-B500-C663B9334490}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8139B34A-EB92-4E66-916C-EDEE420501FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8139B34A-EB92-4E66-916C-EDEE420501FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8139B34A-EB92-4E66-916C-EDEE420501FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8139B34A-EB92-4E66-916C-EDEE420501FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C11C6E30-C93E-49D2-B500-C663B9334490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C11C6E30-C93E-49D2-B500-C663B9334490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C11C6E30-C93E-49D2-B500-C663B9334490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C11C6E30-C93E-49D2-B500-C663B9334490}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

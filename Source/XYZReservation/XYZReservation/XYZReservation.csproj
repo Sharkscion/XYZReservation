@@ -1,18 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B6D8CC13-FADF-42D7-B8A4-7305580B41E7}</ProjectGuid>
+    <ProjectGuid>{8139B34A-EB92-4E66-916C-EDEE420501FD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ReservationCaseStudy</RootNamespace>
-    <AssemblyName>ReservationCaseStudy</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>XYZReservation</RootNamespace>
+    <AssemblyName>XYZReservation</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -35,9 +38,11 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -53,77 +58,73 @@
     <Compile Include="Application.cs" />
     <Compile Include="Helpers\DateParser.cs" />
     <Compile Include="Helpers\EnumHelpers.cs" />
-    <Compile Include="Helpers\Validators\BirthDateValidator.cs" />
-    <Compile Include="Helpers\Validators\FlightValidator.cs" />
-    <Compile Include="Helpers\Validators\InputValidator.cs" />
+    <Compile Include="Helpers\StringFormats.cs" />
     <Compile Include="Helpers\Validators\AirlineCodeValidator.cs" />
     <Compile Include="Helpers\Validators\BaseValidator.cs" />
+    <Compile Include="Helpers\Validators\BirthDateValidator.cs" />
+    <Compile Include="Helpers\Validators\FlightDateValidator.cs" />
     <Compile Include="Helpers\Validators\FlightNumberValidator.cs" />
+    <Compile Include="Helpers\Validators\FlightValidator.cs" />
+    <Compile Include="Helpers\Validators\InputValidator.cs" />
     <Compile Include="Helpers\Validators\NameValidator.cs" />
     <Compile Include="Helpers\Validators\NumPassengersValidator.cs" />
     <Compile Include="Helpers\Validators\StationValidator.cs" />
-    <Compile Include="Helpers\Validators\FlightDateValidator.cs" />
     <Compile Include="Helpers\Validators\TimeValidator.cs" />
-    <Compile Include="Migrations\201712021720578_InitDatabase.cs" />
-    <Compile Include="Migrations\201712021720578_InitDatabase.Designer.cs">
-      <DependentUpon>201712021720578_InitDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712021749447_UpdatedFlightEntity.cs" />
-    <Compile Include="Migrations\201712021749447_UpdatedFlightEntity.Designer.cs">
-      <DependentUpon>201712021749447_UpdatedFlightEntity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712021824521_UpdatedFlightAndStationEntity.cs" />
-    <Compile Include="Migrations\201712021824521_UpdatedFlightAndStationEntity.Designer.cs">
-      <DependentUpon>201712021824521_UpdatedFlightAndStationEntity.cs</DependentUpon>
+    <Compile Include="Migrations\201712040612328_InitDatabase.cs" />
+    <Compile Include="Migrations\201712040612328_InitDatabase.Designer.cs">
+      <DependentUpon>201712040612328_InitDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DAO\BaseDataManager.cs" />
+    <Compile Include="Models\DAO\FlightManager.cs" />
+    <Compile Include="Models\DAO\PassengerManager.cs" />
+    <Compile Include="Models\DAO\ReservationManager.cs" />
+    <Compile Include="Models\DAO\StationManager.cs" />
+    <Compile Include="Models\Database\ReservationDBContext.cs" />
+    <Compile Include="Models\Entities\Flight.cs" />
+    <Compile Include="Models\Entities\Passenger.cs" />
+    <Compile Include="Models\Entities\Reservation.cs" />
+    <Compile Include="Models\Entities\Station.cs" />
+    <Compile Include="Presenters\FlightPresenter.cs" />
     <Compile Include="Presenters\ReservationPresenter.cs" />
-    <Compile Include="Views\Screens\AddPassengerView.cs" />
-    <Compile Include="Views\SearchArgs.cs" />
-    <Compile Include="Views\View Definitions\IManagePassengerView.cs" />
-    <Compile Include="Views\View Definitions\IManageReservationView.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Options\ExitOption.cs" />
     <Compile Include="Views\Options\GoToScreenOption.cs" />
     <Compile Include="Views\Options\IOption.cs" />
     <Compile Include="Views\Options\OperationOption.cs" />
-    <Compile Include="Presenters\FlightPresenter.cs" />
-    <Compile Include="Models\DAO\FlightManager.cs" />
-    <Compile Include="Models\DAO\BaseDataManager.cs" />
-    <Compile Include="Models\DAO\PassengerManager.cs" />
-    <Compile Include="Models\DAO\ReservationManager.cs" />
-    <Compile Include="Models\DAO\StationManager.cs" />
-    <Compile Include="Models\Data\Flight.cs" />
-    <Compile Include="Models\Data\Passenger.cs" />
-    <Compile Include="Models\Data\Reservation.cs" />
-    <Compile Include="Models\Data\Station.cs" />
-    <Compile Include="Models\DB\ReservationDBContext.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Options\SearchOption.cs" />
+    <Compile Include="Views\PassengerArgs.cs" />
+    <Compile Include="Views\Screens\AddPassengerView.cs" />
     <Compile Include="Views\Screens\ApplicationScreen.cs" />
     <Compile Include="Views\Screens\BaseScreen.cs" />
     <Compile Include="Views\Screens\FlightMaintenanceScreen.cs" />
     <Compile Include="Views\Screens\HomeScreen.cs" />
     <Compile Include="Views\Screens\ReservationScreen.cs" />
     <Compile Include="Views\Screens\ScreenFactory.cs" />
-    <Compile Include="Views\View Definitions\IManageFlightView.cs" />
-    <Compile Include="Views\View Definitions\IManageView.cs" />
-    <Compile Include="Views\View Definitions\IView.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Views\SearchArgs.cs" />
+    <Compile Include="Views\ViewDefinitions\IManageFlightView.cs" />
+    <Compile Include="Views\ViewDefinitions\IManagePassengerView.cs" />
+    <Compile Include="Views\ViewDefinitions\IManageReservationView.cs" />
+    <Compile Include="Views\ViewDefinitions\IManageView.cs" />
+    <Compile Include="Views\ViewDefinitions\IView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712021720578_InitDatabase.resx">
-      <DependentUpon>201712021720578_InitDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712021749447_UpdatedFlightEntity.resx">
-      <DependentUpon>201712021749447_UpdatedFlightEntity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712021824521_UpdatedFlightAndStationEntity.resx">
-      <DependentUpon>201712021824521_UpdatedFlightAndStationEntity.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712040612328_InitDatabase.resx">
+      <DependentUpon>201712040612328_InitDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>
